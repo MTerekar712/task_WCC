@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometrical Area Calculator</title>
+    <link rel="Stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Area Calculator</h2>
+        <label for="shape">Choose a shape:</label>
+        <select id="shape" onchange="showInputs()">
+            <option value="square">Square</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="circle">Circle</option>
+            <option value="triangle">Triangle</option>
+            <option value="ellipse">Ellipse</option>
+        </select>
+        <div id="inputs"></div>
+        <button class="calculate" onclick="calculateArea()">Calculate Area</button>
+        <p id="result"></p>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>
